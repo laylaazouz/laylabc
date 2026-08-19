@@ -1,0 +1,309 @@
+/* =========================
+   LAYLA'S WEBSITE
+   ========================= */
+
+body {
+    margin: 0;
+    background-color: #eee3f7;
+    background-image:
+        radial-gradient(#d8bde9 1px, transparent 1px);
+    background-size: 18px 18px;
+
+    color: #49345a;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+/* Main website container */
+
+.page {
+    width: 850px;
+    max-width: 92%;
+
+    margin: 35px auto;
+
+    background-color: #fffaff;
+
+    border: 3px solid #b98bd4;
+
+    box-shadow:
+        5px 5px 0 #c9a5dc,
+        10px 10px 0 #dfc9eb;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    text-align: center;
+
+    padding: 25px 15px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #e8d3f3,
+            #f6eafa
+        );
+
+    border-bottom: 3px double #b98bd4;
+}
+
+header h1 {
+    margin: 8px 0;
+
+    color: #754b91;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    text-shadow:
+        2px 2px #e0c7eb;
+}
+
+.subtitle {
+    color: #8c68a4;
+
+    font-size: 14px;
+}
+
+.sparkles {
+    color: #a56fc2;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #ead8f4;
+
+    border-bottom: 2px solid #c39ad7;
+}
+
+nav a {
+    display: inline-block;
+
+    margin: 3px 4px;
+    padding: 6px 12px;
+
+    color: #613b78;
+
+    background-color: #fdf7ff;
+
+    border: 1px solid #b98bd4;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: 2px 2px 0 #c6a2d7;
+}
+
+nav a:hover {
+    background-color: #dcbdea;
+
+    color: #43264f;
+
+    box-shadow: none;
+
+    transform: translate(1px, 1px);
+}
+
+
+/* =========================
+   MAIN LAYOUT
+   ========================= */
+
+main {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    gap: 18px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   BOXES
+   ========================= */
+
+.box,
+.welcome {
+    margin-bottom: 18px;
+
+    padding: 14px;
+
+    background-color: #fbf4ff;
+
+    border: 2px solid #c59bd9;
+
+    box-shadow:
+        inset 0 0 0 2px #f1e2f8;
+}
+
+.box h2,
+.welcome h2 {
+    margin-top: 0;
+
+    color: #754b91;
+
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    border-bottom: 1px dotted #b98bd4;
+
+    padding-bottom: 5px;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    color: #8050a0;
+
+    font-weight: bold;
+}
+
+a:hover {
+    color: #b24c9a;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+aside .box {
+    font-size: 13px;
+}
+
+aside ul {
+    padding-left: 18px;
+}
+
+aside li {
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.content {
+    line-height: 1.6;
+}
+
+.welcome {
+    text-align: center;
+
+    background-color: #f8edfd;
+}
+
+.welcome p {
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 7px 14px;
+
+    background-color: #d8b6e8;
+
+    border: 2px outset #bd91d0;
+
+    color: #513362;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #cba5df;
+}
+
+
+/* =========================
+   DIVIDERS
+   ========================= */
+
+.divider {
+    text-align: center;
+
+    margin: 12px 0;
+
+    color: #a46abd;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+
+    padding: 10px 20px 25px;
+
+    color: #876298;
+}
+
+.tiny {
+    font-size: 11px;
+
+    color: #a080af;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .page {
+        width: 94%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 2px;
+    }
+}
